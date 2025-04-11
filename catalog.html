@@ -43,68 +43,70 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="main-title">Гостиницы седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link breadcrumbs-current">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
-      <section class="catalog-filters">
-        <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="pool" checked>
-              Бассейн
-            </label>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="parking" checked>
-              Парковка
-            </label>
-            <label class="control">
-              <input class="control-input" type="checkbox" name="wi-fi">
-              Wi-Fi
-            </label>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <label class="control">
-              <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
-              Гостиница
-            </label>
-            <label class="control">
-              <input class="control-input" type="radio" name="hotel-group" value="motel">
-              Мотель
-            </label>
-            <label class="control">
-              <input class="control-input" type="radio" name="hotel-group" value="apartment">
-              Апартаменты
-            </label>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label for="price-from">от</label>
-            <input class="field" type="number" name="price-from" id="price-from" value="0">
-            <label for="price-to">до</label>
-            <input class="field" type="number" name="price-to" id="price-to" value="9000">
-          </fieldset>
-          <button class="catalog-button-submit button" type="submit">
-            Применить
-          </button>
-          <button class="catalog-button-reset button" type="reset">
-            Сбросить
-          </button>
-        </form>
-      </section>
+      <div class="inner-container">
+        <header class="inner-header">
+          <h1 class="main-title">Гостиницы седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-current">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
+        <section class="catalog-filters">
+          <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked>
+                Парковка
+              </label>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="wi-fi">
+                Wi-Fi
+              </label>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <label class="control">
+                <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
+                Гостиница
+              </label>
+              <label class="control">
+                <input class="control-input" type="radio" name="hotel-group" value="motel">
+                Мотель
+              </label>
+              <label class="control">
+                <input class="control-input" type="radio" name="hotel-group" value="apartment">
+                Апартаменты
+              </label>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <label for="price-from">от</label>
+              <input class="field" type="number" name="price-from" id="price-from" value="0">
+              <label for="price-to">до</label>
+              <input class="field" type="number" name="price-to" id="price-to" value="9000">
+            </fieldset>
+            <button class="catalog-filter-submit button" type="submit">
+              Применить
+            </button>
+            <button class="catalog-filter-reset button" type="reset">
+              Сбросить
+            </button>
+          </form>
+        </section>
+      </div>
       <section class="catalog-results">
         <h2 class="visually-hidden">Найденные гостиницы</h2>
-        <div>
+        <div class="sorting-container">
           <p class="filter-result">Найдено гостиниц: 38</p>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
@@ -130,9 +132,9 @@
             </a>
             <p class="hotels-card-group">Гостиница</p>
             <p class="hotels-card-price"><b>От 4000 ₽</b></p>
-            <a class="button" href="hotel.html">Подробнее</a>
-            <button class="button hotels-button" type="button">В избранное</button>
-            <div class="hotels-card-stars"><span class="visually-hidden">4звезды</span></div>
+            <a class="hotels-card-more button" href="hotel.html">Подробнее</a>
+            <button class="hotels-card-favorite button" type="button">В избранное</button>
+            <div class="hotels-card-stars"><span class="visually-hidden">4 звезды</span></div>
             <p class="hotels-card-rating">Рейтинг 8,5</p>
           </li>
           <li class="hotels-card">
@@ -142,8 +144,8 @@
             </a>
             <p class="hotels-card-group">Гостиница</p>
             <p class="hotels-card-price"><b>От 5000 ₽</b></p>
-            <a class="button" href="hotel.html">Подробнее</a>
-            <button class="button hotels-button" type="button">В избранное</button>
+            <a class="hotels-card-more button" href="hotel.html">Подробнее</a>
+            <button class="hotels-card-favorite hotels-card-favorite-active button" type="button">В избранном</button>
             <div class="hotels-card-stars"><span class="visually-hidden">4 звезды</span></div>
             <p class="hotels-card-rating">Рейтинг 9,2</p>
           </li>
@@ -154,8 +156,8 @@
             </a>
             <p class="hotels-card-group">Гостиница</p>
             <p class="hotels-card-price"><b>От 2500 ₽</b></p>
-            <a class="button" href="hotel.html">Подробнее</a>
-            <button class="button hotels-button" type="button">В избранное</button>
+            <a class="hotels-card-more button" href="hotel.html">Подробнее</a>
+            <button class="hotels-card-favorite button" type="button">В избранное</button>
             <div class="hotels-card-stars"><span class="visually-hidden">3 звезды</span></div>
             <p class="hotels-card-rating">Рейтинг 6,9</p>
           </li>
@@ -166,8 +168,8 @@
             </a>
             <p class="hotels-card-group">Гостиница</p>
             <p class="hotels-card-price"><b>От 1500 ₽</b></p>
-            <a class="button" href="hotel.html">Подробнее</a>
-            <button class="button hotels-button" type="button">В избранное</button>
+            <a class="hotels-card-more button" href="hotel.html">Подробнее</a>
+            <button class="hotels-card-favorite button" type="button">В избранное</button>
             <div class="hotels-card-stars">2 звезды</div>
             <p class="hotels-card-rating">Рейтинг 5,0</p>
           </li>
