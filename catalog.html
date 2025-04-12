@@ -114,15 +114,17 @@
               <option value="cheap" selected>Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <a class="button" href="catalog.html?view=card">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a class="button" href="catalog.html?view=tile">
-              <span class="visually-hidden">Показать карточкy</span>
-            </a>
-            <a class="button button-light" href="catalog.html?view=list">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <div class="sorting-buttons">
+              <a class="button" href="catalog.html?view=card">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a class="button" href="catalog.html?view=tile">
+                <span class="visually-hidden">Показать карточкy</span>
+              </a>
+              <a class="button button-light" href="catalog.html?view=list">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </div>
           </div>
 
           <ul class="hotels-list">
@@ -136,11 +138,11 @@
               <a class="hotels-card-more button" href="hotel.html">Подробнее</a>
               <button class="hotels-card-favorite button" type="button">В избранное</button>
               <div class="hotels-card-stars">
-                <img src="images/i-star.svg" alt="Рейтинг отеля 4 из 5">
+                <!-- <img src="images/i-star.svg" alt="Рейтинг отеля 4 из 5">
                 <img src="images/i-star.svg" alt="">
                 <img src="images/i-star.svg" alt="">
                 <img src="images/i-star.svg" alt="">
-                <img src="images/i-star-empty.svg" alt="">
+                <img src="images/i-star-empty.svg" alt=""> -->
               </div>
               <p class="hotels-card-rating">Рейтинг 8,5</p>
             </li>
@@ -217,7 +219,7 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="social">
+        <section class="page-footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
             <li class="social-item">
@@ -236,11 +238,11 @@
               </a>
             </li>
           </ul>
-          <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="page-footer-htmlacademy" href="#" target="_blank" rel="noreferrer noopener">
-            <span class="visually-hidden">htmlacademy</span>
-          </a>
         </section>
+        <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="page-footer-htmlacademy" href="#" target="_blank" rel="noreferrer noopener">
+          <span class="visually-hidden">htmlacademy</span>
+        </a>
       </footer>
     </div>
   </body>

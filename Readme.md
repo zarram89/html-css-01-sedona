@@ -175,4 +175,17 @@ body {
   flex-grow: 1;
 }
 
+Если есть промежуточный `page-container`, то:
+1. `min-height: 100%;` на родительском флекс контейнере
+2. `height: 100%;` наостальных предках `html`, `body`
+3. `flex-grow: 1;` для `main`
+
+```
+
+#### Обводка
+
+```.container {
+  outline: 5px solid black;
+  outline-offset: -5px;
+}
 ```

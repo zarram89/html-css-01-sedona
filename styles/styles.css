@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -129,7 +129,7 @@ img {
   margin: 0 auto;
 }
 
-.advantages {;
+.advantages {
   text-align: center;
 }
 
@@ -282,14 +282,26 @@ img {
 }
 
 .page-footer {
+  display: flex;
   background-color: #ffffff;
 }
 
+.page-footer-social {
+  max-width: 150px;
+  margin-right: auto;
+}
+
 .page-footer-phone {
+  width: 350px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+}
+
+.page-footer-htmlacademy {
+  width: 120px;
+  margin-left: auto;
 }
 
 .main-inner {
@@ -297,6 +309,7 @@ img {
 }
 
 .inner-container {
+  padding: 0 70px;
   color: #ffffff;
   background-color: #333333;
   background-image: url("../images//catalog/filter.jpg");
@@ -333,6 +346,16 @@ img {
   background-color: transparent
 }
 
+.catalog-results {
+  margin-right: auto;
+  padding: 0 70px;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filter-result {
   color: #000000;
   font-size: 30px;
@@ -346,6 +369,12 @@ img {
   font-size: 19px;
   line-height: 21px;
   color: #333333;
+}
+
+.sorting-buttons {
+  display: flex;
+  max-width: 160px;
+  margin-left: 70px;
 }
 
 .hotels-card-link {
