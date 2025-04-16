@@ -59,7 +59,7 @@
           <section class="catalog-filters">
             <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <label class="control">
                   <input class="control-input" type="checkbox" name="pool" checked>
@@ -74,7 +74,7 @@
                   Wi-Fi
                 </label>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-type">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
@@ -89,24 +89,27 @@
                   Апартаменты
                 </label>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              <fieldset class="catalog-filter-group catalog-filter-group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label for="price-from">от</label>
                 <input class="field" type="number" name="price-from" id="price-from" value="0">
                 <label for="price-to">до</label>
                 <input class="field" type="number" name="price-to" id="price-to" value="9000">
               </fieldset>
+              <div class="catalog-buttons">
               <button class="catalog-filter-submit button" type="submit">
                 Применить
               </button>
               <button class="catalog-filter-reset button" type="reset">
                 Сбросить
               </button>
+              </div>
             </form>
           </section>
         </div>
         <section class="catalog-results">
           <h2 class="visually-hidden">Найденные гостиницы</h2>
+
           <div class="sorting-container">
             <p class="filter-result">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
@@ -219,26 +222,24 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="page-footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="button" href="#" target="_blank" rel="noreferrer noopener">
-                <span class="visually-hidden">Группа в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button" href="#" target="_blank" rel="noreferrer noopener">
-                <span class="visually-hidden">Группа в Телеграм</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button" href="#" target="_blank" rel="noreferrer noopener">
-                <span class="visually-hidden">Канал в YouTube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="page-footer-social">
+          <li class="social-item">
+            <a class="button" href="#" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Группа в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button" href="#" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Группа в Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button" href="#" target="_blank" rel="noreferrer noopener">
+              <span class="visually-hidden">Канал в YouTube</span>
+            </a>
+          </li>
+        </ul>
         <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="page-footer-htmlacademy" href="#" target="_blank" rel="noreferrer noopener">
           <span class="visually-hidden">htmlacademy</span>
