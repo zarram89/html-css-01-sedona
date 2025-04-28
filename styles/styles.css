@@ -519,21 +519,45 @@ img {
 }
 
 .hotels-list {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 0 40px;
+  padding: 0 0 40px;
+  border-bottom: 1px solid #e5e5e5;
   list-style-type: none;
 }
 
+.hotels-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 16px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
 .hotels-card-link {
+  grid-column: 1 / -1;
   text-decoration: none;
 }
 
 .hotels-card-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
+
+.hotels-card-group {
+  margin: 0;
+}
+
+.hotels-card-price {
+  margin: 0;
+  justify-self: end;
 }
 
 .hotels-card-price b {
@@ -546,6 +570,11 @@ img {
 
 .hotels-card-favorite-active {
   background-color: #7db54f;
+}
+
+.hotels-card-rating {
+  margin: 0;
+  text-align: center;
 }
 
 .hotels-card-rating {
